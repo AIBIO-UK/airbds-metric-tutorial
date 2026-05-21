@@ -1,5 +1,5 @@
 site_name: AIRBDS AI-Readiness Dataset Scoring Metric
-site_url: https://gavinf97.github.io/airbds-metric-tutorial/
+site_url: https://AIBIO-UK.github.io/airbds-metric-tutorial/
 nav:
     - About: index.md
     - Course Content:
@@ -21,8 +21,8 @@ theme:
   font:
     text: Lato
 
-repo_name: gavinf97/airbds-metric-tutorial
-repo_url: https://github.com/gavinf97/airbds-metric-tutorial
+repo_name: AIBIO-UK/airbds-metric-tutorial
+repo_url: https://github.com/AIBIO-UK/airbds-metric-tutorial
 edit_uri: edit/main/docs/
 
 plugins:
