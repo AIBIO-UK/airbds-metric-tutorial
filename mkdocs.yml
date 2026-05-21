@@ -33,7 +33,7 @@ plugins:
       bib_file: "references.bib"
   - mkdocs-video
 
-copyright: By the AIRBDS Working Group, AIBIO-UK (CC BY 4.0) &middot; Built with the <a href="https://doi.org/10.5281/zenodo.7913092">ELIXIR Training Lesson Template</a> (CC BY 4.0)
+copyright: By the AIRBDS Working Group, AIBIO-UK (CC BY-SA 4.0) &middot; Built with the <a href="https://doi.org/10.5281/zenodo.7913092">ELIXIR Training Lesson Template</a> (CC BY-SA 4.0)
 
 markdown_extensions:
   - abbr

@@ -10,7 +10,7 @@ tags:
 
 **A practical guide to evaluating bioscience datasets for AI/ML use**
 
-Developed by the [AIRBDS Working Group](https://aibio.ac.uk/about/working-groups/airbds/), AIBIO-UK · Funded by BBSRC · Licensed CC BY 4.0
+Developed by the [AIRBDS Working Group](https://aibio.ac.uk/about/working-groups/airbds/), AIBIO-UK · Funded by BBSRC · Licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ---
 
@@ -83,4 +83,6 @@ Chapter 1 explains the difference between the CSV and YAML formats and helps you
 ??? info "Template attribution"
     This tutorial site is built using the [ELIXIR Training Lesson Template](https://zenodo.org/records/7913092)
     by van Geest G, Kronander E, Romero Herrera JA, Žlender N, ELIXIR Training Coordination Team & Cardona A (2023).
-    DOI: [10.5281/zenodo.7913092](https://doi.org/10.5281/zenodo.7913092) · CC BY 4.0.
+    DOI: [10.5281/zenodo.7913092](https://doi.org/10.5281/zenodo.7913092) · CC BY-SA 4.0.
+    Content has been replaced with the AIRBDS tutorial and AIBIO-UK branding applied.
+    This tutorial is therefore also licensed CC BY-SA 4.0.

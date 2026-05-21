@@ -223,7 +223,9 @@ Working group maintainers will review all Pull Requests.
 ## Contribution Licensing
 
 By contributing, you agree that your contributions will be licensed under
-[**CC BY 4.0**](https://creativecommons.org/licenses/by/4.0/). All contributed
+[**CC BY-SA 4.0**](https://creativecommons.org/licenses/by-sa/4.0/). This is
+required because this tutorial is a derivative of the ELIXIR Training Lesson
+Template (CC BY-SA 4.0) and the ShareAlike condition applies. All contributed
 content must respect the copyrights of others.
 
 ---

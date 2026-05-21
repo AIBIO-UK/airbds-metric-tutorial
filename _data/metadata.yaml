@@ -9,7 +9,7 @@ description: >
   of AIBIO-UK, funded by BBSRC.
 keywords: AI-readiness, bioscience datasets, FAIR data, machine learning, scoring metric, AIBIO-UK, BBSRC
 name: AIRBDS AI-Readiness Dataset Scoring — Tutorial
-license: CC-BY-4.0
+license: CC-BY-SA-4.0
 url: https://aibio-uk.github.io/airbds-metric/
 authors:
   - name: AIRBDS Working Group
