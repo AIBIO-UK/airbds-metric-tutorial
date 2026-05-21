@@ -7,7 +7,7 @@ Source for the interactive tutorial site for the [AIRBDS AI-Readiness Dataset Sc
 
 **Live site:** [AIBIO-UK.github.io/airbds-metric-tutorial](https://AIBIO-UK.github.io/airbds-metric-tutorial/)
 
-Built with the [ELIXIR Training Lesson MkDocs template](https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplate-MkDocs). Deployed automatically to GitHub Pages on every push to `main`.
+Built with the [ELIXIR Training Lesson Template](https://zenodo.org/records/7913092) (van Geest G, Kronander E, Romero Herrera JA, Žlender N, ELIXIR Training Coordination Team & Cardona A, 2023; CC BY 4.0; DOI: [10.5281/zenodo.7913092](https://doi.org/10.5281/zenodo.7913092)). Deployed automatically to GitHub Pages on every push to `main`.
 
 ## Local preview
 

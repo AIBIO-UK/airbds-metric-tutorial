@@ -79,3 +79,8 @@ Chapter 1 explains the difference between the CSV and YAML formats and helps you
     > AIRBDS Working Group, AIBIO-UK. (2025). *AIRBDS AI-Readiness Dataset Scoring Metric* (v0.3). GitHub. <https://github.com/AIBIO-UK/airbds-metric>
 
     Full citation metadata is in [`CITATION.cff`](https://github.com/AIBIO-UK/airbds-metric/blob/main/CITATION.cff).
+
+??? info "Template attribution"
+    This tutorial site is built using the [ELIXIR Training Lesson Template](https://zenodo.org/records/7913092)
+    by van Geest G, Kronander E, Romero Herrera JA, Žlender N, ELIXIR Training Coordination Team & Cardona A (2023).
+    DOI: [10.5281/zenodo.7913092](https://doi.org/10.5281/zenodo.7913092) · CC BY 4.0.
