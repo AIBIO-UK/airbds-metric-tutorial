@@ -11,8 +11,8 @@ nav:
 
 theme:
   name: material
-  logo: assets/images/aibio-uk-logo.png
-  favicon: assets/images/elixir_favicon.ico
+  logo: assets/images/10362_UoN_AIBIO-UK_LOGO_Full_Reversed.jpg
+  favicon: assets/images/aibio-uk-logo.png
   custom_dir: overrides
   features:
     - navigation.top
