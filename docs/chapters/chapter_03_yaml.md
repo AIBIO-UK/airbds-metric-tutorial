@@ -3,31 +3,29 @@ tags:
     - YAML
     - command line
     - Git
-    - deposit-ready
 ---
 
 # YAML Walkthrough
 
-**Deposit-ready · Requires a text editor and basic command-line familiarity**
+**Structured & machine-readable · Requires a text editor and basic command-line familiarity**
 
 !!! overview "Overview"
 
     **Questions:**
 
-    - How do I clone the repository and start my review file?
+    - How do I start my review file in the metric's YAML format?
     - How do I fill in reviewer details and answer all 27 questions in YAML?
     - How do I validate the file and calculate a grade?
-    - How do I submit via pull request?
 
     **Learning Objectives**
 
     By the end of this chapter, you will be able to:
 
-    1. Clone the repository and create a YAML review file from the template below
+    1. Create a YAML review file from the template below
     2. Fill in all reviewer metadata and 27 question answers
     3. Correctly handle the Ethics questions with the `not_applicable` field
     4. Validate the YAML file and resolve common errors
-    5. Calculate a grade and submit via a pull request
+    5. Calculate a grade and record it in the file
 
     **Time:** 30–60 minutes per dataset review (depending on how well you know the dataset)
 
@@ -45,16 +43,12 @@ Before you begin, make sure you have:
 
 ---
 
-## Step 1 — Get the repository
+## Step 1 — Get the metric for reference
 
-Fork the repository on GitHub, then clone your fork:
-
-```bash
-git clone https://github.com/<your-username>/airbds-metric.git
-cd airbds-metric
-```
-
-If you just want to **explore locally** without submitting, clone the main repo directly:
+You don't need to fork or clone anything to complete a review — the template
+below is self-contained. If you'd like the canonical metric file open
+alongside it for reference (full question text, guidance, and the
+`grade_points`/`grading` rules), clone the metric repository:
 
 ```bash
 git clone https://github.com/AIBIO-UK/airbds-metric.git
@@ -65,9 +59,8 @@ cd airbds-metric
 
 ## Step 2 — Create your review file
 
-The `reviews/` folder is a plain drop folder — there is no template file to
-copy from the repository itself. Instead, create a new file in `reviews/`
-using this naming convention:
+Create a new `.yaml` file wherever you keep your notes for this dataset. A
+convenient naming convention, if you're reviewing more than one dataset:
 
 ```
 <dataset_accession>_<your_initials>_<review_number>.yaml
@@ -77,7 +70,7 @@ using this naming convention:
 - `<your_initials>` — uppercase letters only (2–6 characters, no digits)
 - `<review_number>` — start at 1; increment if you review the same dataset again
 
-For example: `reviews/E-MTAB-1234_CH_1.yaml`
+For example: `E-MTAB-1234_CH_1.yaml`
 
 Create the file and paste in the template below:
 
@@ -242,7 +235,7 @@ subject data**.
 Before calculating the score, check that your file is syntactically valid:
 
 ```bash
-python3 -c "import yaml; yaml.safe_load(open('reviews/E-MTAB-1234_CH_1.yaml')); print('YAML is valid')"
+python3 -c "import yaml; yaml.safe_load(open('E-MTAB-1234_CH_1.yaml')); print('YAML is valid')"
 ```
 
 If you see `YAML is valid`, proceed. If you see an error, it will show the line number.
@@ -273,9 +266,8 @@ by the reviewer):
 A `"No"` answer always scores 0. Sum the points for every `"Yes"` answer to
 get your `weighted_score` (maximum possible: **711**).
 
-The authoritative numbers live in the metric YAML's `grade_points` block; the
-human-readable rationale is in
-[`reviews/GUIDANCE.md`](https://github.com/AIBIO-UK/airbds-metric/blob/main/reviews/GUIDANCE.md).
+The authoritative numbers live in the metric YAML's `grade_points` block —
+see [`metric/airbds_metric_v0.4.yaml`](https://github.com/AIBIO-UK/airbds-metric/blob/main/metric/airbds_metric_v0.4.yaml).
 
 ---
 
@@ -306,37 +298,21 @@ result:
 
 ---
 
-## Step 9 — Submit via pull request
+## Step 9 — Keep your record
 
-```bash
-# Create a feature branch
-git checkout -b feat/add-review-E-MTAB-1234
+Your completed YAML file is a self-contained, structured record of the
+review — keep it wherever suits you (your own notes, a project repo, version
+control).
 
-# Stage your file
-git add reviews/E-MTAB-1234_CH_1.yaml
-
-# Commit
-git commit -m "review: add review for E-MTAB-1234 (CH)"
-
-# Push to your fork
-git push -u origin feat/add-review-E-MTAB-1234
-```
-
-Then open a **pull request** on GitHub against the `main` branch of [AIBIO-UK/airbds-metric](https://github.com/AIBIO-UK/airbds-metric).
-
-!!! info "Commit message convention"
-
-    | Prefix | Use for |
-    |---|---|
-    | `review:` | Adding or updating a dataset review |
-    | `metric:` | Changes to the metric YAML |
-    | `docs:` | Documentation updates |
-    | `fix:` | Typos, broken links, formatting |
-
-For full contribution guidelines see [CONTRIBUTING.md](https://github.com/AIBIO-UK/airbds-metric/blob/main/CONTRIBUTING.md).
+!!! note "No central submission channel yet"
+    There's currently nowhere to submit or deposit a completed review into
+    the `airbds-metric` repository itself. Because the format is structured
+    YAML — human-readable and machine-readable at once — the working group
+    hopes it can eventually feed shared, automated tooling. That
+    infrastructure isn't built yet, so for now the file is yours to keep.
 
 ---
 
-Well done — you have completed a dataset review in the deposit-ready YAML format! 🎉
+Well done — you have completed a dataset review in the structured YAML format! 🎉
 
 Continue to [Further Resources](../follow_up_training.md) or return to the [About page](../index.md).

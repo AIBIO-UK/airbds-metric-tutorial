@@ -19,9 +19,9 @@ Developed by the [AIRBDS Working Group](https://aibio.ac.uk/about/working-groups
     **Questions this tutorial answers:**
 
     - What does the AIRBDS metric measure, and why does it matter?
-    - Should I use the Google Sheet (quick assessment) or YAML (deposit-ready) route?
+    - Should I use the Google Sheet (quick assessment) or YAML (structured) route?
     - How do I work through all 27 questions and calculate a grade?
-    - How do I submit my completed review?
+    - How do I record my completed review?
 
     **Learning Objectives**
 
@@ -30,11 +30,11 @@ Developed by the [AIRBDS Working Group](https://aibio.ac.uk/about/working-groups
     1. Describe what the AIRBDS metric assesses and how it is scored
     2. Choose the route (Google Sheet or YAML) that suits your goal
     3. Complete a full dataset review and assign a grade (Caution / Bronze / Silver / Gold)
-    4. Submit a completed review to the repository
+    4. Calculate and record your grade
 
     **Who this is for:** Researchers, data curators, and repository managers working with bioscience datasets
 
-    **Skill levels covered:** Quick assessment (Google Sheet route) · Deposit-ready (YAML route)
+    **Skill levels covered:** Quick assessment (Google Sheet route) · Structured & machine-readable (YAML route)
 
     **Estimated time:** 30–60 minutes per dataset review
 
@@ -68,8 +68,8 @@ Each answer contributes to a weighted score. Datasets receive one of four grades
 
 Chapter 1 explains the difference between the Google Sheet and YAML routes and helps you choose the right one based on your goal. You will then follow either:
 
-- **Chapter 2** — Google Sheet walkthrough (quick assessment, no coding required, not for deposit)
-- **Chapter 3** — YAML walkthrough (deposit-ready, text editor and command line)
+- **Chapter 2** — Google Sheet walkthrough (quick assessment, no coding required)
+- **Chapter 3** — YAML walkthrough (structured & machine-readable, text editor and command line)
 
 ---
 

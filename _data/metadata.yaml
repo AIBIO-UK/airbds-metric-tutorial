@@ -5,8 +5,8 @@ conformsTo: https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE
 description: >
   Step-by-step tutorial for scoring bioscience datasets using the AIRBDS
   AI-Readiness Metric. Covers both a quick-assessment Google Sheet route and a
-  deposit-ready YAML (command-line) route. Developed by the AIRBDS Working
-  Group of AIBIO-UK, funded by BBSRC.
+  structured, machine-readable YAML (command-line) route. Developed by the
+  AIRBDS Working Group of AIBIO-UK, funded by BBSRC.
 keywords: AI-readiness, bioscience datasets, FAIR data, machine learning, scoring metric, AIBIO-UK, BBSRC
 name: AIRBDS AI-Readiness Dataset Scoring — Tutorial
 license: CC-BY-SA-4.0

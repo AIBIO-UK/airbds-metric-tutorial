@@ -29,9 +29,8 @@ tags:
 ## What route do I need to choose?
 
 The AIRBDS metric is a set of **27 questions**. Both routes below ask exactly the
-same questions and produce the same grade — the difference is how you fill them
-in, and whether the result can be logged into the [`airbds-metric`](https://github.com/AIBIO-UK/airbds-metric)
-repository.
+same questions and produce the same grade — the difference is how you fill
+them in.
 
 === "What is the Google Sheet route?"
 
@@ -41,25 +40,16 @@ repository.
 
     No installation, terminal, or Git required — only a Google account.
 
-    !!! warning "Not a deposit format"
-        A completed Google Sheet copy is useful for a **quick, personal
-        assessment** of a dataset. It is **not** a format the `airbds-metric`
-        repository accepts — reviews logged into the repository's [`reviews/`](https://github.com/AIBIO-UK/airbds-metric/tree/main/reviews)
-        folder must be YAML. If you want your review to become part of the
-        public record, transcribe it into YAML afterwards (Chapter 3).
-
 === "What is the YAML route?"
 
     **YAML** stands for **YAML Ain't Markup Language**.
 
     It is a structured plain-text format. You open it in a **text editor** (VS
-    Code, Sublime Text, nano, vim) and edit fields by hand. You also use a
-    **terminal** to copy files, validate them, and submit via Git.
+    Code, Sublime Text, nano, vim) and edit fields by hand — the same format
+    used by the canonical [`metric/airbds_metric_v0.4.yaml`](https://github.com/AIBIO-UK/airbds-metric/blob/main/metric/airbds_metric_v0.4.yaml)
+    file in [`airbds-metric`](https://github.com/AIBIO-UK/airbds-metric).
 
-    You need basic familiarity with the command line (e.g. `cp`, `git add`, `git push`).
-
-    This is the **only format the `airbds-metric` repository accepts** for a
-    logged, citable review deposited in [`reviews/`](https://github.com/AIBIO-UK/airbds-metric/tree/main/reviews).
+    You need basic familiarity with the command line (e.g. `cp`, `git clone`).
 
     Example of what it looks like in a text editor:
 
@@ -81,20 +71,28 @@ repository.
     **Just want to quickly score a dataset for yourself?** → Use the **Google
     Sheet route** (Chapter 2).
 
-    **Want your review logged in the `airbds-metric` repository?** → Use the
-    **YAML route** (Chapter 3). It requires basic command-line familiarity.
+    **Want a structured, machine-readable file** that matches the metric's own
+    format — handy for scripting or keeping a tidy record? → Use the **YAML
+    route** (Chapter 3). It requires basic command-line familiarity.
 
     You can always start with the Google Sheet and transcribe into YAML later —
     both routes ask the same 27 questions, so nothing is lost.
 
+!!! note "No automated scorer or submission process yet"
+    Either route, you work out your grade manually — there is no automated
+    scorer right now, and no central place to submit a completed review.
+    Because the metric itself is structured YAML, the working group hopes it
+    can eventually feed shared, automated tooling that's both human- and
+    machine-readable — but that infrastructure doesn't exist yet.
+
 :::cards cols=2
 
 - title: "📊 Google Sheet — Quick Assessment"
-  content: "Fill in your own copy of the live Google Sheet. Scoring is built in. No installation required. Not accepted for deposit into the repository."
+  content: "Fill in your own copy of the live Google Sheet. Scoring is built in. No installation required."
   url: chapter_02_google_sheet.md
 
-- title: "🗂 YAML — Deposit-Ready"
-  content: "Edit in a text editor. Submit via Git. Requires basic command-line familiarity. The only format the airbds-metric repository accepts for logged reviews."
+- title: "🗂 YAML — Structured & Machine-Readable"
+  content: "Edit in a text editor. Matches the canonical metric file format. Requires basic command-line familiarity."
   url: chapter_03_yaml.md
 
 :::
@@ -130,4 +128,4 @@ repository.
 **Ready? Jump to your chapter:**
 
 - [Chapter 2 — Google Sheet Walkthrough (Quick Assessment)](chapter_02_google_sheet.md)
-- [Chapter 3 — YAML Walkthrough (Deposit-Ready)](chapter_03_yaml.md)
+- [Chapter 3 — YAML Walkthrough](chapter_03_yaml.md)

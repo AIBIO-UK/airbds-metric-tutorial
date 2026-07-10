@@ -16,7 +16,7 @@ tags:
     - How do I get my own copy of the metric's Google Sheet?
     - How do I fill in my reviewer details and answer all 27 questions?
     - How do I read off my score and grade?
-    - Can I submit this to the `airbds-metric` repository?
+    - What if I want a structured, machine-readable copy of my review?
 
     **Learning Objectives**
 
@@ -26,7 +26,7 @@ tags:
     2. Fill in all 27 questions with Yes/No answers
     3. Correctly handle the Ethics questions (`ABC-24`–`ABC-27`)
     4. Read the weighted score and grade the sheet calculates automatically
-    5. Understand why this format cannot be deposited into the repository, and what to do if you want it logged
+    5. Know where to go if you want a structured YAML copy of your review
 
     **Time:** 30–60 minutes per dataset review (depending on how well you know the dataset)
 
@@ -102,8 +102,9 @@ Scoring is built into the sheet — once you have answered all 27 questions, the
 sheet calculates your weighted score and grade for you. You do not need to
 write or copy any formulas.
 
-For the reasoning behind how the score and grade are derived, see
-[`reviews/GUIDANCE.md`](https://github.com/AIBIO-UK/airbds-metric/blob/main/reviews/GUIDANCE.md)
+For the reasoning behind how the score and grade are derived, see the
+`grade_points`/`grading` blocks in
+[`metric/airbds_metric_v0.4.yaml`](https://github.com/AIBIO-UK/airbds-metric/blob/main/metric/airbds_metric_v0.4.yaml)
 in the `airbds-metric` repository. The four possible grades are:
 
 | Grade | Meaning |
@@ -117,26 +118,23 @@ in the `airbds-metric` repository. The four possible grades are:
 
 ## Step 6 — What to do with your completed review
 
-!!! warning "This is not a submittable format"
+A completed copy of the Google Sheet is a complete, self-contained record —
+there's nothing further you need to do with it.
 
-    A completed copy of the Google Sheet is great for a **quick, personal
-    assessment** — but the `airbds-metric` repository only accepts **YAML**
-    reviews in its [`reviews/`](https://github.com/AIBIO-UK/airbds-metric/tree/main/reviews)
-    folder. A Google Sheet copy cannot be deposited there.
+If you'd prefer a structured, machine-readable copy (useful for scripting, or
+if you just like having a plain-text record alongside your notes):
 
-    If you want your review logged as part of the public record:
-
-    1. Keep your completed sheet open for reference.
-    2. Go to [Chapter 3 — YAML Walkthrough](chapter_03_yaml.md) and transcribe
-       your answers into the YAML template. Both routes ask the same 27
-       questions, so this is a direct copy of your `Yes`/`No` answers and
-       comments.
+1. Keep your completed sheet open for reference.
+2. Go to [Chapter 3 — YAML Walkthrough](chapter_03_yaml.md) and transcribe
+   your answers into the YAML template. Both routes ask the same 27
+   questions, so this is a direct copy of your `Yes`/`No` answers and
+   comments.
 
 ---
 
 Well done — you have completed a quick dataset assessment using the Google
 Sheet! 🎉
 
-Continue to [Chapter 3 — YAML Walkthrough](chapter_03_yaml.md) to log this
-review in the repository, or to [Further Resources](../follow_up_training.md) /
+Continue to [Chapter 3 — YAML Walkthrough](chapter_03_yaml.md) for the
+structured YAML version, or to [Further Resources](../follow_up_training.md) /
 the [About page](../index.md).

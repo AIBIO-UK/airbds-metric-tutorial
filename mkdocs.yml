@@ -5,7 +5,7 @@ nav:
     - Course Content:
       - "1. Getting Started — Choose Your Route": chapters/chapter_01.md
       - "2. Google Sheet Walkthrough (Quick Assessment)": chapters/chapter_02_google_sheet.md
-      - "3. YAML Walkthrough (Deposit-Ready)": chapters/chapter_03_yaml.md
+      - "3. YAML Walkthrough": chapters/chapter_03_yaml.md
       - "References": chapters/references.md
     - "Further Resources": follow_up_training.md
 

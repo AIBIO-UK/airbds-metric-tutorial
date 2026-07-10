@@ -9,11 +9,10 @@ The AIRBDS metric was developed by the **AI-Ready Bioscience Datasets (AIRBDS) W
 
 ---
 
-## Contributing reviews
+## Contributing
 
-Dataset reviews submitted to the repository help build a public record of AI-readiness across the bioscience landscape. You are very welcome to contribute.
-
-- Contribution guidelines: [CONTRIBUTING.md](https://github.com/AIBIO-UK/airbds-metric/blob/main/CONTRIBUTING.md)
+- Contributing to **this tutorial** (docs fixes, chapter improvements, broken links): see this repository's own [CONTRIBUTING.md](https://github.com/AIBIO-UK/airbds-metric-tutorial/blob/main/CONTRIBUTING.md)
+- Contributing to the **metric itself** (questions, weights, grading): see [`airbds-metric`'s CONTRIBUTING.md](https://github.com/AIBIO-UK/airbds-metric/blob/main/CONTRIBUTING.md)
 - Code of Conduct: [CODE_OF_CONDUCT.md](https://github.com/AIBIO-UK/airbds-metric/blob/main/CODE_OF_CONDUCT.md)
 
 ---

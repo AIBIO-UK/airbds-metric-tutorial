@@ -20,8 +20,9 @@ Then open `http://localhost:8000/`.
 
 ## Using the metric
 
-The `airbds-metric` repository no longer ships a standalone template file.
-Two routes are covered by this tutorial instead:
+Two routes are covered by this tutorial:
 
-- **Quick assessment** — make your own copy of the [live Google Sheet](https://docs.google.com/spreadsheets/d/1eriM8bXAoNXsIR9l8OpI1XYEp8FbtBWt05CTIP9cVeg/edit) (see [Chapter 2](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_02_google_sheet/))
-- **Deposit-ready** — copy the YAML template embedded in [Chapter 3](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_03_yaml/) into `reviews/` in your fork of [`airbds-metric`](https://github.com/AIBIO-UK/airbds-metric)
+- **Google Sheet** — make your own copy of the [live Google Sheet](https://docs.google.com/spreadsheets/d/1eriM8bXAoNXsIR9l8OpI1XYEp8FbtBWt05CTIP9cVeg/edit) (see [Chapter 2](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_02_google_sheet/))
+- **YAML** — copy the template embedded in [Chapter 3](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_03_yaml/), matching the format of the canonical [`metric/airbds_metric_v0.4.yaml`](https://github.com/AIBIO-UK/airbds-metric/blob/main/metric/airbds_metric_v0.4.yaml) in [`airbds-metric`](https://github.com/AIBIO-UK/airbds-metric)
+
+Both ask the same 27 questions and produce the same grade — pick whichever suits your workflow. There's no automated scorer or central submission process yet.
