@@ -3,9 +3,9 @@ site_url: https://AIBIO-UK.github.io/airbds-metric-tutorial/
 nav:
     - About: index.md
     - Course Content:
-      - "1. Getting Started — Choose Your Format": chapters/chapter_01.md
-      - "2. CSV Walkthrough (Beginner)": chapters/chapter_02_csv.md
-      - "3. YAML Walkthrough (Intermediate)": chapters/chapter_03_yaml.md
+      - "1. Getting Started — Choose Your Route": chapters/chapter_01.md
+      - "2. Google Sheet Walkthrough (Quick Assessment)": chapters/chapter_02_google_sheet.md
+      - "3. YAML Walkthrough (Deposit-Ready)": chapters/chapter_03_yaml.md
       - "References": chapters/references.md
     - "Further Resources": follow_up_training.md
 

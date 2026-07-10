@@ -37,18 +37,24 @@ Requests (PRs) which are reviewed and merged by the working group maintainers.
 The primary contribution type is a completed dataset review scored using the
 AIRBDS metric.
 
-1. **Copy the template:** Start from
-   [`metric/review_template.yaml`](metric/review_template.yaml).
+1. **Base your review on the metric:** the 27 questions are in the
+   [Google Sheet](https://docs.google.com/spreadsheets/d/1eriM8bXAoNXsIR9l8OpI1XYEp8FbtBWt05CTIP9cVeg/edit)
+   or `metric/airbds_metric_v0.4.yaml` in
+   [`airbds-metric`](https://github.com/AIBIO-UK/airbds-metric). This
+   tutorial's [YAML walkthrough](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_03_yaml/)
+   has a copy-pasteable template and walks through the exact format.
 2. **Name your file:** Use the convention
    `reviews/<dataset_accession>_<reviewer_initials>_<n>.yaml`  
-   e.g. `reviews/E-MTAB-1234_CH_1.yaml`
-3. **Fill in all fields:** Answer all 28 questions ("Yes" or "No"). For Ethics
-   questions (ACM-24 to ACM-28), if the dataset contains no human or animal
-   subject data record the answer as `"Yes"` and set `not_applicable: true`
-   with a brief comment.
-4. **Calculate your score:** Use the weights in
-   [`metric/scoring_schema.yaml`](metric/scoring_schema.yaml). Record the total
-   weighted score and grade in the `result` block.
+   e.g. `reviews/E-MTAB-1234_CH_1.yaml`. Initials must be uppercase letters
+   only (2–6 characters, no digits).
+3. **Fill in all fields:** Answer all 27 questions (`"Yes"` or `"No"`,
+   case-sensitive, quoted). For Ethics questions (ABC-24 to ABC-27), if the
+   dataset contains no human or animal subject data record the answer as
+   `"Yes"` and set `not_applicable: true` with a brief comment.
+4. **Calculate and fill in the `result:` block:** there is no automated
+   scorer yet, so work out `weighted_score` and `grade` yourself. See
+   [`reviews/GUIDANCE.md`](https://github.com/AIBIO-UK/airbds-metric/blob/main/reviews/GUIDANCE.md)
+   in `airbds-metric` for how the calculation works.
 5. **Submit a PR** — see [Pull Requests](#pull-requests).
 
 Inter-rater reliability is important. Where possible, datasets should be
@@ -70,7 +76,7 @@ is committed.
 
 **When opening an Issue for a metric change:**
 - Use the title prefix `[Metric Change]`
-- State which question(s) are affected (e.g. `ACM-12`)
+- State which question(s) are affected (e.g. `ABC-12`)
 - Describe the rationale for the change and any evidence or references that
   support it
 - Indicate whether the change is: guidance-only (PATCH), question rewording
@@ -119,7 +125,7 @@ If you find an error, broken link, or inconsistency anywhere in the repository:
 
 ## What to Contribute
 
-- ✅ Completed dataset reviews (`reviews/*.yaml`)
+- ✅ Completed dataset reviews (`reviews/*.yaml`, see [Submitting Dataset Reviews](#submitting-dataset-reviews) above)
 - ✅ Corrections to existing reviews (factual errors, updated dataset versions)
 - ✅ Proposed question additions, removals, or rewordings — via Issue first
 - ✅ Guidance clarifications (PATCH-level) — directly as a PR
@@ -144,24 +150,19 @@ If you find an error, broken link, or inconsistency anywhere in the repository:
 ```
 airbds-metric/
 ├── metric/
-│   ├── airbds_metric_v0.3.yaml   # Canonical metric definition (questions, weights)
-│   ├── scoring_schema.yaml       # Grade thresholds and scoring rules
-│   └── review_template.yaml      # Blank template for new reviews
-├── reviews/                      # Completed dataset reviews (one file per review)
+│   ├── airbds_metric_v0.4.yaml   # Canonical metric (questions, weights, grading rules)
+│   └── CHANGELOG.md
+├── reviews/                      # Deposit reviews here
 │   └── <accession>_<initials>_<n>.yaml
 ├── CITATION.cff
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── LICENSE.md
-├── CHANGELOG.md
 └── README.md
 ```
 
-All metric and review files are YAML. Key rules:
+The metric and reviews are both YAML. Key rules:
 - Use `"Yes"` or `"No"` (quoted strings) for all answer fields.
-- Do not leave required fields blank in submitted reviews (use `""` only in
-  the template).
-- Follow the exact field names defined in `review_template.yaml`.
+- Do not leave required fields blank in submitted reviews.
 - Ensure all YAML is valid before submitting (see `python3 -c "import yaml; ..."` above).
 
 ---
@@ -178,10 +179,10 @@ The metric follows [Semantic Versioning](https://semver.org/)
 | Changes to scoring weights or grade thresholds | MAJOR |
 
 The canonical metric file is versioned in its filename
-(e.g. `airbds_metric_v0.3.yaml`). When a new version is released:
+(e.g. `airbds_metric_v0.4.yaml`). When a new version is released:
 1. The new YAML file is added (e.g. `airbds_metric_v1.0.yaml`)
 2. The old file is kept for archival purposes
-3. `CHANGELOG.md` is updated
+3. `metric/CHANGELOG.md` is updated
 4. A GitHub Release is tagged (e.g. `v1.0.0`)
 5. `CITATION.cff` is updated with the new version
 

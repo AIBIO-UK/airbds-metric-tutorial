@@ -18,9 +18,10 @@ mkdocs serve
 
 Then open `http://localhost:8000/`.
 
-## Metric templates
+## Using the metric
 
-Download the review templates from the main metric repository:
+The `airbds-metric` repository no longer ships a standalone template file.
+Two routes are covered by this tutorial instead:
 
-- [review_template.csv](https://github.com/AIBIO-UK/airbds-metric/raw/main/metric/review_template.csv)
-- [review_template.yaml](https://github.com/AIBIO-UK/airbds-metric/blob/main/metric/review_template.yaml)
+- **Quick assessment** — make your own copy of the [live Google Sheet](https://docs.google.com/spreadsheets/d/1eriM8bXAoNXsIR9l8OpI1XYEp8FbtBWt05CTIP9cVeg/edit) (see [Chapter 2](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_02_google_sheet/))
+- **Deposit-ready** — copy the YAML template embedded in [Chapter 3](https://AIBIO-UK.github.io/airbds-metric-tutorial/chapters/chapter_03_yaml/) into `reviews/` in your fork of [`airbds-metric`](https://github.com/AIBIO-UK/airbds-metric)

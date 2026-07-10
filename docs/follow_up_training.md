@@ -31,6 +31,6 @@ The AIRBDS metric builds on several established frameworks for data quality and 
 
 ## Cite the metric
 
-> AIRBDS Working Group, AIBIO-UK. (2025). *AIRBDS AI-Readiness Dataset Scoring Metric* (v0.3). GitHub. <https://github.com/AIBIO-UK/airbds-metric>
+> AIRBDS Working Group, AIBIO-UK. (2026). *AIRBDS AI-Readiness Dataset Scoring Metric* (v0.4). GitHub. <https://github.com/AIBIO-UK/airbds-metric>
 
 Full citation metadata (including all working group members) is in [`CITATION.cff`](https://github.com/AIBIO-UK/airbds-metric/blob/main/CITATION.cff).
